@@ -38,7 +38,7 @@ public class Main {
     }
 
     // task 4
-    void randomGenerator(long seed, long a, long c, long m) {
+    static void randomGenerator(long seed, long a, long c, long m) {
         Stream.iterate(seed, x -> (a * x + c) % m);
     }
 
